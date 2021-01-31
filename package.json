@@ -1,0 +1,66 @@
+{
+  "name": "web-crypto-examples",
+  "version": "1.0.0",
+  "description": "Examples showing usage of @encipher/web-crypto library",
+  "main": "public/index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:types": "tsc"
+  },
+  "keywords": [
+    "web",
+    "crypto",
+    "webcrypto",
+    "cryptography",
+    "web-crypto"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint",
+      "prettier"
+    ]
+  },
+  "author": "Shirshendu Bhowmick",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/encipherapp/web-crypto-examples"
+  },
+  "bugs": {
+    "url": "https://github.com/encipherapp/web-crypto-examples/issues"
+  },
+  "homepage": "https://github.com/encipherapp/web-crypto-examples#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-typescript-prettier": "^4.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "html-webpack-plugin": "^4.5.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.7"
+  }
+}
